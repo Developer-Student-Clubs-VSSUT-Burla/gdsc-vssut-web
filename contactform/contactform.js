@@ -1,118 +1,66 @@
-jQuery(document).ready(function($) {
-  "use strict";
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBeQNTd0qfe7RHtRjp_ej2cSWmq5pfLzSc",
+  authDomain: "dsc-vssut-burla.firebaseapp.com",
+  databaseURL: "https://dsc-vssut-burla.firebaseio.com",
+  projectId: "dsc-vssut-burla",
+  storageBucket: "dsc-vssut-burla.appspot.com",
+  messagingSenderId: "86708583840",
+  appId: "1:86708583840:web:ae199e0180d298f0ea78c5",
+  measurementId: "G-9NS9SSKNK6"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+//Initialize firestore
+var db = firebase.firestore();
 
-  //Contact
-  $('form.contactForm').submit(function() {
-    var f = $(this).find('.form-group'),
-      ferror = false,
-      emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+//add addEventListener to the form
+document.querySelector('.contactForm').addEventListener('submit', submitForm);
 
-    f.children('input').each(function() { // run all inputs
+// Submit form
+function submitForm(e) {
+  e.preventDefault();
 
-      var i = $(this); // current input
-      var rule = i.attr('data-rule');
+  // Get values
+  var fname = document.getElementById("fname").value
+  var lname = document.getElementById("lname").value
+  var email = document.getElementById("email").value
+  var phone = document.getElementById("number").value
+  var subject = document.getElementById("subject").value
+  var message = document.getElementById("message").value
 
-      if (rule !== undefined) {
-        var ierror = false; // error flag for current input
-        var pos = rule.indexOf(':', 0);
-        if (pos >= 0) {
-          var exp = rule.substr(pos + 1, rule.length);
-          rule = rule.substr(0, pos);
-        } else {
-          rule = rule.substr(pos + 1, rule.length);
-        }
+  // Save message
+  saveMessage(fname,lname,phone, email, subject, message);
 
-        switch (rule) {
-          case 'required':
-            if (i.val() === '') {
-              ferror = ierror = true;
-            }
-            break;
+  // Show alert
+  document.getElementById('sendmessage').style.display = 'block';
+  document.querySelector('.contactForm').style.display = 'none';
 
-          case 'minlen':
-            if (i.val().length < parseInt(exp)) {
-              ferror = ierror = true;
-            }
-            break;
+  // Hide alert after 3 seconds
+  setTimeout(function() {
+    document.getElementById('sendmessage').style.display = 'none';
+    document.querySelector('.contactForm').style.display = 'block';
+  }, 3000);
 
-          case 'email':
-            if (!emailExp.test(i.val())) {
-              ferror = ierror = true;
-            }
-            break;
+  // Clear form
+  document.querySelector('.contactForm').reset();
 
-          case 'checked':
-            if (! i.is(':checked')) {
-              ferror = ierror = true;
-            }
-            break;
+}
 
-          case 'regexp':
-            exp = new RegExp(exp);
-            if (!exp.test(i.val())) {
-              ferror = ierror = true;
-            }
-            break;
-        }
-        i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
-      }
+// Save message to firebase-firestore
+function saveMessage(fname,lname,phone, email, subject, message) {
+  db.collection("message").add({
+      First_name: fname,
+      Last_name: lname,
+      phone:phone,
+      email: email,
+      subject: subject,
+      message: message
     });
-    f.children('textarea').each(function() { // run all inputs
-
-      var i = $(this); // current input
-      var rule = i.attr('data-rule');
-
-      if (rule !== undefined) {
-        var ierror = false; // error flag for current input
-        var pos = rule.indexOf(':', 0);
-        if (pos >= 0) {
-          var exp = rule.substr(pos + 1, rule.length);
-          rule = rule.substr(0, pos);
-        } else {
-          rule = rule.substr(pos + 1, rule.length);
-        }
-
-        switch (rule) {
-          case 'required':
-            if (i.val() === '') {
-              ferror = ierror = true;
-            }
-            break;
-
-          case 'minlen':
-            if (i.val().length < parseInt(exp)) {
-              ferror = ierror = true;
-            }
-            break;
-        }
-        i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
-      }
-    });
-    if (ferror) return false;
-    else var str = $(this).serialize();
-    var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'contactform/contactform.php';
-    }
-    $.ajax({
-      type: "POST",
-      url: action,
-      data: str,
-      success: function(msg) {
-        // alert(msg);
-        if (msg == 'OK') {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
-        } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
-        }
-
-      }
-    });
-    return false;
-  });
-
-});
+    // .then(function(docRef) {
+    //   console.log("Document written with ID: ", docRef.id);
+    // })
+    // .catch(function(error) {
+    //   console.error("Error adding document: ", error);
+    // });
+}
