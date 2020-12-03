@@ -1,6 +1,7 @@
 ## DSC official website
-`website + blog` <br/>
+Website + Blog 
 
-[Themeurl]( https://bootstrapmade.com/newbiz-bootstrap-business-template/)
+[Themeurl]  (https://bootstrapmade.com/newbiz-bootstrap-business-template/)
+[Community] (https://dsc.community.dev/veer-surendra-sai-university-of-technology/)
 
-for any queries contact __Team DSC VSSUT__
+For any queries: dscvssut@gmail.com
