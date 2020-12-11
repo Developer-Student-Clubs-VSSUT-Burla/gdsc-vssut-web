@@ -819,6 +819,8 @@ h6 {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  height: 400px;
+  width: 300px;
 }
 
 #portfolio .portfolio-item .portfolio-wrap {
