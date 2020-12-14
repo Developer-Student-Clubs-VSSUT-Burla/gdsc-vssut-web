@@ -479,7 +479,20 @@ h6 {
   background: #fff;
   padding: 60px 0;
 }
-
+#about .holds{
+  margin-top: 90px;
+}
+#about .text .hold{
+  width: 450px;
+  margin-left: 90px;
+}
+#about .text .hold p{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0.8cm;
+  letter-spacing: 1px;
+  text-align: center;
+}
 #about .about-container .background {
   margin: 20px 0;
 }
@@ -819,14 +832,17 @@ h6 {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
-  height: 400px;
+  height: 500px;
   width: 300px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
 }
 
 #portfolio .portfolio-item .portfolio-wrap {
   overflow: hidden;
   position: relative;
   border-radius: 6px;
+  transform: translateY(25px);
   margin: 0;
 }
 
