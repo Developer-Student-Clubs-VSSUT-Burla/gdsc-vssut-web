@@ -1,0 +1,32 @@
+  .guidelines_head {
+      margin-top: 25px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .guidelines_body {
+    margin-top: 30px;
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .body_head {
+      font-size: medium;
+      font-weight: bolder;
+  }
+
+  .gd_container {
+      margin-left: 300px;
+      margin-right: 300px;
+  }
+
+  .ullist {
+    font-size: small;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bolder;
+  }
