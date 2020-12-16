@@ -173,7 +173,8 @@ h6 {
 }
 
 #intro .intro-img {
-  width: 50%;
+  width: 400px;
+  height: 75%;
   float: right;
 }
 
@@ -185,7 +186,7 @@ h6 {
 #intro .intro-info h2 {
   color: #fff;
   margin-bottom: 40px;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
 }
 
@@ -230,6 +231,25 @@ h6 {
   color: #fff;
 }
 
+#img {
+  position: relative;
+  width: 360px;
+  margin-top: -320px;
+  margin-right: 65%;
+}
+#img .container{
+  width: auto;
+}
+#img .intro-img{
+  width: 350px;
+  height: 400px;
+  box-shadow: 20px 20px 200px grey;
+  margin-bottom: 40px;
+  
+}
+#img .img-fluid{
+  border-radius: 8px;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -481,6 +501,7 @@ h6 {
 }
 #about .holds{
   margin-top: 90px;
+
 }
 #about .text .hold{
   width: 450px;
@@ -491,6 +512,7 @@ h6 {
   font-weight: 600;
   line-height: 0.8cm;
   letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
   text-align: center;
 }
 #about .about-container .background {
