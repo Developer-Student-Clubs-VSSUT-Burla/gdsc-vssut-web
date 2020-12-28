@@ -341,8 +341,9 @@ boxes {
 
 #intro  h1 span {
   color: #fff;
-  
+
 }
+
 
 #intro .intro-info .btn-get-started,
 #intro .intro-info .btn-services {
@@ -394,7 +395,7 @@ boxes {
   height: 400px;
   box-shadow: 20px 20px 200px grey;
   margin-bottom: 40px;
-  
+
 }
 #img .img-fluid{
   border-radius: 8px;
