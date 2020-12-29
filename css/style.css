@@ -1094,6 +1094,30 @@ pro_title>h3{
   line-height: 24px;
   margin-bottom: 0;
 }
+@media (max-width: 600px) {
+  #services .description {
+    font-size: 12px;
+    margin-left: 25px;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  #services .title {
+    margin-left: 25px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-size: 15px;
+  }
+  #services .img img {
+    transition: 0.5s;
+    width: 100px;
+    height: 110px;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  #services .box .right{
+    padding: 7px 7px 7px 0;
+  }
+}
 
 #why-us {
   padding: 60px 0;
