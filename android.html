@@ -82,13 +82,14 @@
   <section id="intro" class="clearfix">
     <div class="container">
       <div class="intro-img">
-        <img src="img/portfolio/DSC Cloud Insta.png" alt="" class="img-fluid" />
+        <img src="img/portfolio/Android.png" alt="" class="img-fluid" />
       </div>
       <div class="intro-info">
         <h2>Android Study Jams</h2>
         <div>
-          <a href="https://forms.gle/MJHvoxo2uDQyPteL8" class="btn-services scrollto">Enroll</a>
-          <a href="http://bit.ly/vssutandroidjam" class="btn-services scrollto">Join Us On whatsapp</a>
+           <a onclick="showhidden()" id="gcldenroll" class="btn-services scrollto">Enroll</a>
+          <li id="hidden" style="display: none; font-weight: bolder; color: black">This Skill-Up Program is already completed. Better Luck next year</li>
+          
         </div>
       </div>
 
@@ -111,12 +112,36 @@
         <div class="row h-100 justify-content-around align-items-center holds">
           <div class="col-lg-6 col-md-12 services-left-image wow fadeInUp">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kfWXEaX1yk0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vdYDhp4_uQc" allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-lg-6 col-md-12 content order-lg-1 order-2  wow fadeInUp">
             <div style="margin-left: 20px;text-align:center;margin-top:15px;">
-              <p style="font-family: 'Lato', sans-serif;font-weight:600;word-spacing:8px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus, id alias dicta velit, quae fugiat accusamus rem laboriosam nesciunt quam sed enim exercitationem ipsum facilis autem iure officia quaerat?</p>
+              <p style="font-family: 'Lato', sans-serif;font-weight:500;word-spacing:8px;">Android study jams is a community driven program to help students learn to build Android apps
+in the Kotlin programming language and earn badges/certificates along the way.Participants
+completing this course and projects receive a certificate from Google's swag. Participants also
+get discounts on the Android nanodegree if they choose to continue their Android Journey</p>
+            </div>
+
+          </div>
+          <div class="col-lg-12 col-md-12 content order-lg-1 order-2  wow fadeInUp">
+            <div style="margin-left: 20px;text-align:center;margin-top:15px;">
+              <p style="font-family: 'Lato', sans-serif;text-align: left;font-weight:500;word-spacing:8px;">The first track is for participants new to programming, that deals with android basics in Kotlin .
+In the first track you will learn about basic programming concepts of. The unit one is about
+Kotlin basics for Android and second unit is about layouts .Unit one has four pathways They are
+- Introduction to Kotlin, Create your first Android app, Build a basic layout and add a button to
+an app.In the second unit you will learn to get a user input and create UI components such as
+editable text fields , radio button , switches and learn to change the theme and launcher icon for
+your app.</br></br>
+The second track is for participants having prior programming experience. Here, you have to go
+through a series of exercises to build your first interactive app , create different layouts , learn
+about working of multi screen navigation, activity and fragment lifecycle. You will further learn
+about architecture components like Viewmode and Livedata and create a database using the
+room library.</br></br>
+After completion of each unit you will earn digital badges which will be displayed in the
+developer's profile. You will also get a chance to showcase your app on official Google
+Platforms!</p>
+             <b style="text-align: center;">It is free of cost. All it requires is dedication and exciting goodies await you.</b>
             </div>
 
           </div>
@@ -125,6 +150,9 @@
     </section>
     <section id="carousel">
       <div class="container">
+      <header class="section-header">
+          <h3 class="section-title">Gallery</h3>
+        </header>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -775,7 +803,7 @@
 
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-
+   <script src="js/guidelines.js"></script>
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
