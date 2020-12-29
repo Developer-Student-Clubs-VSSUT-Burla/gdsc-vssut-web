@@ -1040,7 +1040,8 @@ pro_title>h3{
 }
 
 #services .box {
-  padding: 30px;
+
+ background:  #ecf5ff !important;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -1048,23 +1049,28 @@ pro_title>h3{
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
+  display: flex;
 }
 
 #services .box:hover {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
-
-#services .icon {
-  position: absolute;
-  left: -10px;
-  top: calc(50% - 32px);
+#services .box .right{
+  padding: 15px 10px 10px 0;
+}
+#services .img {
+  /* position: absolute;
+  left: 7px;
+  top: calc(50% - 32px); */
 }
 
-#services .icon i {
-  font-size: 64px;
-  line-height: 1;
+#services .img img {
   transition: 0.5s;
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 #services .title {
@@ -1084,9 +1090,33 @@ pro_title>h3{
 
 #services .description {
   font-size: 14px;
-  margin-left: 40px;
+  margin-left: 35px;
   line-height: 24px;
   margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  #services .description {
+    font-size: 12px;
+    margin-left: 25px;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  #services .title {
+    margin-left: 25px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-size: 15px;
+  }
+  #services .img img {
+    transition: 0.5s;
+    width: 100px;
+    height: 110px;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  #services .box .right{
+    padding: 7px 7px 7px 0;
+  }
 }
 
 #why-us {
