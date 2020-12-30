@@ -127,7 +127,9 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #4e5052;
   text-transform: capitalize;
 }
-
+.our-team .name{
+  font-size: 22px;
+}
 .our-team .social {
   width: 100%;
   padding: 0;
