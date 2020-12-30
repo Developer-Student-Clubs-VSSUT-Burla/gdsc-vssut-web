@@ -505,12 +505,12 @@ body {
     padding: 60px 0;
   }
   #about .holds{
-    margin-top: 90px;
+    margin-top: 50px;
   
   }
   #about .text .hold{
     width: 450px;
-    margin-left: 90px;
+    margin-left: 50px;
   }
   #about .text .hold p{
     font-size: 16px;
@@ -619,6 +619,10 @@ body {
   #carousel{
     padding: 60px 0 40px 0;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+  #carousel .section-header{
+    margin-bottom: 40px;
+
   }
   /* Services Section
   --------------------------------*/
@@ -1296,14 +1300,14 @@ body {
   --------------------------------------------------------------*/
   
   #footer {
-    background: #00428a;
+    background:#4885ed;
     padding: 0 0 30px 0;
     color: #eee;
     font-size: 14px;
   }
   
   #footer .footer-top {
-    background: #004a99;
+    background: #4885ed;
     padding: 60px 0 30px 0;
   }
   
