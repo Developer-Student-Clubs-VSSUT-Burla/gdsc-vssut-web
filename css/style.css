@@ -737,16 +737,16 @@ pro_title>h3{
    transition: transform calc(var(--d) * 2) var(--e);
  }
  .card_pr:nth-child(1):before {
-   background-image: url("../img/pograms/img-pog.jfif");
+   background-image: url("../img/pograms/prog1.png");
  }
  .card_pr:nth-child(2):before {
-   background-image: url("../img/pograms/img-pog.jfif");
+   background-image: url("../img/pograms/prog2.png");
  }
  .card_pr:nth-child(3):before {
-   background-image: url("../img/pograms/img-pog.jfif");
+   background-image: url("../img/pograms/prog3.png");
  }
  .card_pr:nth-child(4):before {
-   background-image: url("../img/pograms/img-pog.jfif");
+   background-image: url("../img/pograms/prog4.png");
  }
 
  .content_pr {
