@@ -316,8 +316,8 @@ boxes {
 #intro {
   width: 100%;
   position: relative;
-  background: url("../img/intro-bg.png") center bottom no-repeat;
-  background-size: cover;
+  background: url("../img/intro.png") center bottom no-repeat;
+  background-size: contain;
   padding: 200px 0 120px 0;
 }
 
@@ -330,10 +330,11 @@ boxes {
 #intro .intro-info {
   width: 50%;
   float: left;
+
 }
 
 #intro .intro-info h2 {
-  color: #fff;
+  color: black;
   margin-bottom: 40px;
   font-size: 38px;
   font-weight: 700;
