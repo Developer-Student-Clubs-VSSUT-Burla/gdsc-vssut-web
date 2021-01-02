@@ -37,6 +37,7 @@
 <body>
 
   <!-- ===================================== pre-loader start =========================== -->
+  <div id="preloader">
   <div class="boxes cen">
     <div class="box">
       <div></div>
@@ -63,6 +64,7 @@
       <div></div>
     </div>
   </div>
+  </div>
   <!-- ===================================== pre-loader ends =========================== -->
 
 
@@ -72,7 +74,7 @@
   <header id="header" class="fixed-top">
     <div class="container">
       <div class="logo float-left">
-        <a href="index.html" class="scrollto"><img src="img/DSC SVG.svg" alt="" class="img-fluid" /></a>
+        <a href="index.html" class="scrollto"><img src="img/logo.svg" alt="" class="img-fluid" /></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -112,9 +114,9 @@
   ============================-->
   <section id="intro" class="clearfix">
     <div class="container">
-      <div class="intro-img">
+      <!-- <div class="intro-img">
         <img src="img/" alt="" class="img-fluid" />
-      </div>
+      </div> -->
 
       <div class="intro-info">
         <h2>Get ready to dive into the world of developers</h2>
@@ -133,20 +135,20 @@
     <!--==========================
       About Us Section
     ============================-->
-    <section id="about" class="clearfix">
-      <div class="container">
+    <section id="about" class="">
+      <div class="container" data-aos="fade-up">
 
         <header class="section-header">
           <h3 class="section-title">About US</h3>
         </header>
         <div class="row h-100 justify-content-around align-items-center holds">
           <div class="col-lg-6 col-md-12 services-left-image wow fadeInUp">
-            <img src="img/about-img.svg" class="img-fluid" alt="" />
+            <img src="img/logo/about_us.jpg" class="img-fluid" alt="" />
           </div>
 
           <div class="col-lg-6 col-md-12 content order-lg-1 order-2  wow fadeInUp">
             <div style="margin-left: 20px;text-align:center;margin-top:15px;">
-              <p style="font-family: 'Lato', sans-serif;font-weight:600;word-spacing:8px;">Developer Student Clubs or
+              <p style="font-family:  sans-serif;font-weight:normal;;word-spacing:8px;">Developer Student Clubs or
                 DSC is a program started by google to train individuals around the world to
                 learn about a wide range of technical topics and gain new skills though hands-on workshops, in person
                 training and project building activities. DSC VSSUT was primarily set up to help students advance their
@@ -170,7 +172,7 @@
     <!--==========================
       What We Do Section
     ============================-->
-    <section id="service" class="section-bg">
+    <section id="service" class="">
       <div class="container">
         <header class="section-header">
           <h3>What We Do</h3>
@@ -181,7 +183,7 @@
             developers around the world, make projects,organized workshops and many more.
           </p>
         </header>
-        <div class="pro_title wow fadeInUp" style="margin-bottom:-25px;">
+        <div class="pro_title wow fadeInUp" style="margin-bottom:-90px;">
           <h3><b>We Work On: </b></h3>
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
         </div>
@@ -205,7 +207,7 @@
                   <h6 class="title">Machine Learning</h6>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6  wow fadeInUp" data-wow-delay="0.2s">
+              <div class="col-lg-6 col-md-6  wow fadeInUp" data-wow-delay="0.1s">
                 <div class="box">
                   <div class="icon">
                     <i class="fa fa-globe" style="color: #2C5364"></i>
@@ -213,7 +215,7 @@
                   <h6 class="title">Web Development</h6>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="box">
                   <div class="icon">
                     <i class="fa fa-mobile" style="color: #2C5364"></i>
@@ -221,15 +223,15 @@
                   <h6 class="title">Flutter Development</h6>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6   wow fadeInUp" data-wow-delay="0.4s">
+              <div class="col-lg-6 col-md-6   wow fadeInUp" data-wow-delay="0.3s">
                 <div class="box">
                   <div class="icon">
                     <i class="fa fa-terminal" style="color: #2C5364"></i>
                   </div>
-                  <h6 class="title">Ar / Vr</h6>
+                  <h6 class="title">AR / VR</h6>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6  wow fadeInUp" data-wow-delay="0.4s">
+              <div class="col-lg-6 col-md-6  wow fadeInUp" data-wow-delay="0.3s">
                 <div class="box">
                   <div class="icon">
                     <i class="fa fa-cloud" style="color: #2C5364"></i>
@@ -237,15 +239,15 @@
                   <h6 class="title">Cloud Computing</h6>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="box">
                   <div class="icon">
                     <i class="fa fa-google" style="color:#2C5364"></i>
                   </div>
-                  <h6 class="title">Actions On Google</h6>
+                  <h6 class="title">Competitive Coding</h6>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="box">
                   <div class="icon">
                     <i class="fa fa-pencil" style="color: #2C5364"></i>
@@ -256,7 +258,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 services-left-image wow fadeInUp">
-            <img src="img/about-img.svg" class="img-fluid" alt="" />
+            <img src="img/logo/wht_we_do.jpg" class="img-fluid" alt="" />
           </div>
         </div>
 
@@ -264,9 +266,9 @@
 <div class="project_section">
 
 
-        <div class="pro_title wow fadeInUp">
+        <div class="pro_title wow fadeInUp"  style="margin-top:-40px;">
           <h3><b>Skill Ups</b></h3>
-          <p>These are the major skill ups conducted under DSC</p>
+          <p>These are the major skill ups conducted under DSC.</p>
         </div>
 
 
@@ -313,7 +315,7 @@
     <!--==========================
       Portfolio Section
     ============================-->
-    <section id="services" class="clearfix">
+    <section id="services" class="section-bg">
 
         <div class="container" data-aos="fade-up">
 
@@ -537,7 +539,6 @@
               <li><a href="#services" class="scrollto">Events</a></li>
               <li><a href="team.html" class="scrollto">Our Team</a></li>
               <li><a href="./guidelines.html">Community guidelines</a></li>
-              <!--<li><a href="#">Code of conducte</a></li>-->
 
             </ul>
           </div>
@@ -559,15 +560,11 @@
               <a href="https://www.linkedin.com/company/dsc-vssut-burla/" class="linkedin"><i class="fa fa-linkedin"></i></a>
 
             </div>
-            <!-- <div class="social-links" style="margin:10px 0 0">
-              <a href=" https://www.youtube.com/channel/UCccGPRmMdlOyzzmEnvRj8qg" class="youtube"><i class="fa fa-youtube"></i></a>
-              <a href=" https://www.youtube.com/channel/UCccGPRmMdlOyzzmEnvRj8qg" class="youtube"><i class="fab fa-discord"></i></a>
-            </div> -->
 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
+            <!-- <h4>Our Newsletter</h4>
             <p>
               Tamen quem nulla quae legam multos aute sint culpa legam noster
               magna veniam enim veniam illum dolore legam minim quorum culpa
@@ -575,7 +572,13 @@
             </p>
             <form action="" method="post">
               <input type="email" name="email" /><input type="submit" value="Subscribe" />
-            </form>
+            </form> -->
+            <div class="intro-info">
+              <h4>Get ready to dive into the world of developers</h4>
+              <div>
+                <a href="https://dsc.community.dev/accounts/login/?next=/veer-surendra-sai-university-of-technology/" target="_blank" class="btn  df ">Join us</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -301,8 +301,8 @@ boxes {
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
+  margin: -13px 0;
+  max-height: 75px;
 }
 
 .main-pages {
@@ -315,10 +315,20 @@ boxes {
 
 #intro {
   width: 100%;
+  height: 650px;
   position: relative;
-  background: url("../img/intro-bg.png") center bottom no-repeat;
+  background: url("../img/DSC.gif") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
+}
+@media  (max-width: 600px) {
+  #intro {
+    height: 350px;
+    position: relative;
+    background: url("../img/mob.gif") center bottom no-repeat;
+    background-size: contain;
+    padding: 200px 0 120px 0;
+  }
 }
 
 #intro .intro-img {
@@ -328,14 +338,15 @@ boxes {
 }
 
 #intro .intro-info {
-  width: 50%;
+  width: 60%;
   float: left;
+
 }
 
 #intro .intro-info h2 {
-  color: #fff;
-  margin-bottom: 40px;
-  font-size: 38px;
+  color: black;
+  margin-bottom: 36px;
+  font-size: 45px;
   font-weight: 700;
 }
 
@@ -366,9 +377,9 @@ boxes {
 }
 
 #intro .intro-info .btn-get-started:hover {
-  background: none;
-  border-color: #fff;
-  color: #fff;
+  background: green;
+  border-color: green;
+  color: color;
 }
 
 #intro .intro-info .btn-services {
@@ -662,8 +673,8 @@ pro_title>h3{
  :root {
    --d: 700ms;
    --e: cubic-bezier(0.19, 1, 0.22, 1);
-   --font-sans: "Rubik", sans-serif;
-   --font-serif: "Cardo", serif;
+   --font-sans:  sans-serif;
+   --font-serif:  serif;
  }
 
 
@@ -764,8 +775,11 @@ pro_title>h3{
 
  .title_pr {
    font-size: 1.3rem;
-   font-weight: bold;
+   font-weight: 900;
    line-height: 1.2;
+   border: solid
+   padding:5px;
+   color: #ecf5ff;
  }
 
  .copy_pr {
@@ -987,7 +1001,8 @@ pro_title>h3{
 #service .box:hover {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
-  background: linear-gradient(to right,#74ebd5,#99f2c8 );
+  background: #007bff;
+  /* background: linear-gradient(to right,#74ebd5,#99f2c8 ); */
 
   color: white;
 }
@@ -1041,7 +1056,7 @@ pro_title>h3{
 
 #services .box {
 
- background:  #ecf5ff !important;
+ /* background:  #ecf5ff !important; */
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -1900,4 +1915,14 @@ pro_title>h3{
   #intro {
     padding: 100px 0 20px 0;
   }
+}
+.df{
+  background-color: #007bff;
+  color: white;
+  padding: 10px 32px;
+    border-radius: 50px;
+}
+.df:hover{
+  color: white;
+  background-color: green;
 }
