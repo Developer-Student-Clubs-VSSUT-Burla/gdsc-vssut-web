@@ -315,9 +315,10 @@ boxes {
 
 #intro {
   width: 100%;
+  height: 650px;
   position: relative;
   background: url("../img/pop.gif") center bottom no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 200px 0 120px 0;
 }
 
