@@ -316,7 +316,7 @@ boxes {
 #intro {
   width: 100%;
   position: relative;
-  background: url("../img/intro.png") center bottom no-repeat;
+  background: url("../img/pop.gif") center bottom no-repeat;
   background-size: contain;
   padding: 200px 0 120px 0;
 }
