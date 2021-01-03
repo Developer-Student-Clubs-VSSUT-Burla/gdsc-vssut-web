@@ -23,12 +23,8 @@
   }
 
   .ullist {
-    text-align: justify;
+    
     font-size: small;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
     font-weight: bolder;
   }
