@@ -996,6 +996,9 @@ pro_title>h3{
   #p_about{
     margin-left: 0px !important;
   }
+  #p_about p{
+  word-spacing: 8px;
+  }
   #about .holds {
     margin-top: 50px;
 }
