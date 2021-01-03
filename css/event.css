@@ -1456,6 +1456,23 @@ body {
   }
 
   /*--------------------------------------------------------------
+  # Carousel buttons
+  --------------------------------------------------------------*/
+  
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: red;
+}
+  /*--------------------------------------------------------------
   # Responsive Media Queries
   --------------------------------------------------------------*/
 
