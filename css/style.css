@@ -670,6 +670,23 @@ pro_title>h3{
   font-size: 15px;
 
 }
+.skill{
+  margin-top: -20px;
+}
+.wrk{
+  margin-bottom: -90px;
+}
+@media (max-width: 600px){
+  .skill{
+    margin-top: -17px;
+  }
+  .wrk{
+    margin-bottom: -30px;
+  }
+  .pro_title b{
+    font-size: 20px;
+  }
+}
  :root {
    --d: 700ms;
    --e: cubic-bezier(0.19, 1, 0.22, 1);

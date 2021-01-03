@@ -171,6 +171,15 @@ body {
     background-size: cover;
     padding: 200px 0 120px 0;
   }
+  @media  (max-width: 600px) {
+    #intro {
+      height: 350px;
+      position: relative;
+      background: url("../img/intro-bg.png") center bottom no-repeat;
+      background-size: cover;
+      padding: 200px 0 120px 0;
+    }
+  }
 
   #intro .intro-img {
 
