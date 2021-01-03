@@ -24,7 +24,8 @@ body {
 
   p {
     padding: 0;
-    margin: 0 0 30px 0;
+    margin: 0 8px 30px -10px;
+    text-align: justify !important;
   }
 
   h1,
@@ -171,6 +172,15 @@ body {
     background-size: cover;
     padding: 200px 0 120px 0;
   }
+  @media  (max-width: 600px) {
+    #intro {
+      height: 350px;
+      position: relative;
+      background: url("../img/mob_ev.png") center bottom no-repeat;
+      background-size: cover;
+      padding: 200px 0 120px 0;
+    }
+  }
 
   #intro .intro-img {
 
@@ -213,20 +223,20 @@ body {
     border-radius: 50px;
     transition: 0.5s;
     margin: 0 20px 20px 0;
-    color: black;
+    color: white;
       background: #007bff;
   }
 
   #intro .intro-info .btn-get-started {
     background: green;
     border: 2px solid green;
-    color: black;
+    color: white;
   }
 
   #intro .intro-info .btn-get-started:hover {
     background: none;
     border-color: green;
-    color: black;
+    color: white;
   }
 
   #intro .intro-info .btn-services {
@@ -254,6 +264,15 @@ body {
     background: green;
     border-color: green;
     color: #fff;
+  }
+
+  @media  (max-width: 600px) {
+  #intro .img-fluid{
+    display: none;
+  }
+  .android{
+    letter-spacing: normal !important;
+  }
   }
 
   /*--------------------------------------------------------------
@@ -1458,7 +1477,7 @@ body {
   /*--------------------------------------------------------------
   # Carousel buttons
   --------------------------------------------------------------*/
-  
+
 
 .carousel-control-next-icon:after
 {
