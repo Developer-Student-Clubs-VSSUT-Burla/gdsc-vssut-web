@@ -795,9 +795,16 @@ pro_title>h3{
    font-size: 1.3rem;
    font-weight: 900;
    line-height: 1.2;
-   border: solid
-   padding:5px;
+   padding: 5px;
+   background-color: 	rgba(105,105,105,0.3);
    color: #ecf5ff;
+   border-radius: 10px;
+ }
+ @media (max-width: 600px) {
+   .title_pr {
+
+     background-color: 	rgba(105,105,105,0.0) !important;
+   }
  }
 
  .copy_pr {
