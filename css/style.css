@@ -1963,3 +1963,7 @@ pro_title>h3{
   color: white;
   background-color: green;
 }
+.dis:hover{
+  background-color: #6155a6 !important;
+  border: 2px solid #6155a6 !important;
+}
